@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Outcome 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleNavLOs.css') }}">
+    <script src="https://use.typekit.net/ehh4lya.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo1') }}">LO1</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo2') }}">LO2</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo3') }}">LO3</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo4') }}">LO4</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo5') }}">LO5</a></li>
+        </ul>
+    </nav>
+
+    <section class="section section--lo" id="lo2">
+        <div class="section__inner">
+            <div class="block">
+                <h2>Learning Outcome 2</h2>
+                <p class="lead">Development & version control</p>
+                <!-- Example of adding a project -->
+                <div class="project">
+                    <img src="../static/images/jigglypuff.png" alt="Project Image">
+                    <div class="project-text">
+                        <h3>Moving Jigglypuff</h3>
+                        <p>Animating a Jigglypuff using the @keyframes query in CSS shows my understanding of animation in web development. This project involves writing and refining code, which is a key aspect of development and version control.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../static/images/psyduck.png" alt="Project Image">
+                    <div class="project-text">
+                        <h3>Coding Psyduck</h3>
+                        <p>Developing a CSS representation of Psyduck required in-depth knowledge of CSS, particularly working with shapes. This project highlights my coding skills and my ability to document and manage my code through version control.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../static/images/drumkit.png" alt="Project Image">
+                    <div class="project-text">
+                        <h3>JS Drumkit</h3>
+                        <p>I corrected and enhanced a JavaScript drumkit, making syntax corrections, adding sounds, and altering the design to make it unique and functional. This project required me to document changes and use version control to track my progress.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../static/images/tictac.png" alt="Project Image">
+                    <div class="project-text">
+                        <h3>Correcting Tictactoe</h3>
+                        <p>I corrected the code for a JavaScript, HTML, and CSS Tic-Tac-Toe app, added visual feedback for winning squares, and animated a dancing Pokémon at the end. This involved debugging and version control to ensure the app worked seamlessly.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../static/images/bashAR.png" alt="Project Image">
+                    <div class="project-text">
+                        <h3>AR pikachu</h3>
+                        <p>I successfully implemented an AR projection of Pikachu, utilizing pre-existing 3D models and focusing on the technical aspects of augmented reality. This project required me to work with AR technologies, ensuring the integration was seamless and functional, and involved documenting the process within a version control environment to track changes and improvements. Unfortunelately the AR image cant be shown due to apple's security in my phone but there is the running server</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

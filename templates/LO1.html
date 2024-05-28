@@ -2,34 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LO1</title>
-    <link rel="stylesheet" href="../static/css/StyleLOs.css">
+    <title>Learning Outcome 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleNavLOs.css') }}">
+    <script src="https://use.typekit.net/ehh4lya.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
-    <header>
-        <h1>Learning Outcome 1: Media Interactive Products</h1>
-    </header>
-    <main>
-        <section class="projects">
-            <div class="project">
-                <img src="../static/images/HiddenSpots.png" alt="Project 1 Image">
-                <div class="project-info">
-                    <h2>Media Campaign-Hidden spots</h2>
-                    <p>Project about a media campaign to drive traffic to the website exploreBreda.nl. In this project i came up with the idea of AI generated art QR codes, also made SEO research on the most searched subjects regarding Breda and lastly i came up with the idea for the 
-                      "Hidden Spots" Campaign, where people could upload their videos from their favorite places to the page and be published on the site's social networks. I also designed the website for this idea.
-                      Explanation for achieved Learning Outcome: This project involved user research, brand identity creation, website design iteration, and logo design iteration for an artist named Natalie. By developing and testing interactive elements like the website and logo with users, you demonstrated a thorough understanding of creating and refining interactive media products.
-                    </p>
+    <nav class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('lo1') }}">LO1</a>
+        <a href="{{ url_for('lo2') }}">LO2</a>
+        <a href="{{ url_for('lo3') }}">LO3</a>
+        <a href="{{ url_for('lo4') }}">LO4</a>
+        <a href="{{ url_for('lo5') }}">LO5</a>
+    </nav>
+
+    <section class="section section--lo" id="lo2">
+        <div class="section__inner">
+            <div class="block">
+                <h2>Learning Outcome 1</h2>
+                <p class="lead">Media Interactive Products</p>
+                <!-- Example of adding a project -->
+                <div class="project">
+                    <img src="../static/images/containerNatArtWebIt1.png" alt="Project Image">
+                    <div class="project-text">
+                        <h3>Project Branding</h3>
+                        <p> I conducted user research and created the brand identity for an artist named Natalie. This included the first iteration of the website design and a logo design iteration. This project involved orienting myself in current design trends and technologies, creating interactive prototypes, and testing with users and stakeholders.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="project">
-              <img src="../static/images/windowHomeImage1.png" alt="YOUR_PROJECT_NAME Image">
-              <div class="project-info">
-                  <h2>EXAMPLE</h2>
-                  <p>Short description.</p>
-              </div>
-          </div>
-        </section>
-    </main>
+                <div class="project">
+                    <img src="../static/images/HiddenSpots.png" alt="Project Image">
+                    <div class="project-text">
+                        <h3>Media Campaign</h3>
+                        <p> With my group, I created a media campaign for Explore Breda. I developed ideas such as AI-generated QR codes, filmed campaign videos, and performed SEO keyword research. The project involved orienting in media landscapes, designing interactive content, and testing ideas with the target market.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-text">
+                        <h3>Faces Everywhere</h3>
+                        <p> I learned how cameras work and took pictures of objects resembling faces around.</p>
+                    </div>
+                </div>
+        </div>
+
+    </section>
 </body>
 </html>
+

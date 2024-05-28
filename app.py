@@ -13,10 +13,25 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 def index():
     return render_template('index.html')
 
-@app.route('/lO1')
+@app.route('/LO1')
 def lo1():
     return render_template('LO1.html')
 
+@app.route('/LO2')
+def lo2():
+    return render_template('LO2.html')
+
+@app.route('/LO3')
+def lo3():
+    return render_template('LO3.html')
+
+@app.route('/LO4')
+def lo4():
+    return render_template('LO4.html')
+
+@app.route('/LO5')
+def lo5():
+    return render_template('LO5.html')
 
 @app.route('/send_prompt', methods=['POST'])
 def send_prompt():
@@ -41,6 +56,7 @@ def chat_with_openai(prompt):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 

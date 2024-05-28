@@ -46,63 +46,49 @@
                 I made<br>
                 for LO1</h1>
             <p class="lead">
-                See the projects on LO1 <a href="./LO1.html" class="link">Here</a>.
+                See the projects on LO1 <a href="{{ url_for('lo1') }}">Here</a>.
             </p>
         </div>
     </div>
 </section>
 
 <section class="section section--about" id="about">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-        <polygon points="100 0 50 10 0 0" />
-    </svg>
-
     <div class="section__inner">
         <div class="block">
             <a class="pre" href="#about"><span>#2</span>Development & version control</a>
             <h2>Learning and exploring new programming languages is a passion for me.</h2>
-            <p class="lead">Take a look at some projects of mine from my LO2 <a href="#" class="link">Here</a>.</p>
+            <p class="lead">Take a look at some projects of mine from my LO2 <a href="{{ url_for('lo2') }}">Here</a>.</p>
         </div>
     </div>
 </section>
 
-<section class="section section--clients" id="clients">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-        <polygon points="100  100 10 0 5 0 10" /></svg>
 
+<section class="section section--clients" id="clients">
     <div class="section__inner">
         <div class="block">
             <a class="pre" href="#clients"><span>#3</span>Iterative design</a>
             <h2>I like to explore and use professional design tools to make my work better.</h2>
-            <p class="lead">You can see some of my projects from LO3 <a href="#" class="link">Here</a>.</p>
+            <p class="lead">You can see some of my projects from LO3 <a href="{{ url_for('lo3') }}">Here</a>.</p>
         </div>
     </div>
 </section>
 
 <section class="section section--portfolio" id="portfolio">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path d="M0 100 C 25 0 75 0 100 100 Z"></path>
-    </svg>
-
     <div class="section__inner">
         <div class="block">
             <a class="pre" href="#portfolio"><span>#4</span>Professional standard</a>
             <h2>I try to keep my personal and group work organized and easy to understand.</h2>
-            <p class="lead">Take a look at some projects that involve LO4 <a href="#" class="link">Here</a>.</p>
+            <p class="lead">Take a look at some projects that involve LO4 <a href="{{ url_for('lo4') }}">Here</a>.</p>
         </div>
     </div>
 </section>
 
-<section class="section section--portfolio1" id="leadership">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path d="M0 100 C 50 0 50 0 100 100 Z"></path>
-    </svg>
-
+<section class="section section--leadership" id="leadership">
     <div class="section__inner">
         <div class="block">
             <a class="pre" href="#leadership"><span>#5</span>Personal Leadership</a>
             <h2>I like to take initiative to make some new projects.</h2>
-            <p class="lead">Take a look at some projects that involve LO5 <a href="#" class="link">Here</a>.</p>
+            <p class="lead">Take a look at some projects that involve LO5 <a href="{{ url_for('lo5') }}">Here</a>.</p>
         </div>
     </div>
 </section>
