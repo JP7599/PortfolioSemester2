@@ -9,58 +9,14 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('lo1') }}">LO1</a>
-        <a href="{{ url_for('lo2') }}">LO2</a>
-        <a href="{{ url_for('lo3') }}">LO3</a>
-        <a href="{{ url_for('lo4') }}">LO4</a>
-        <a href="{{ url_for('lo5') }}">LO5</a>
-    </nav>
-
-    <section class="section section--lo" id="lo2">
-        <div class="section__inner">
-            <div class="block">
-                <h2>Learning Outcome 3</h2>
-                <p class="lead">Iterative Design</p>
-                <!-- Example of adding a project -->
-                <div class="project">
-                    <img src="{{ url_for('static', filename='images/#.jpg') }}" alt="Project Image">
-                    <div class="project-text">
-                        <h3>Heuristic Evaluation</h3>
-                        <p> I performed a heuristic evaluation for the UX design of the Media campaign page for video uploads. This involved iteratively identifying usability issues and suggesting improvements to enhance user experience.</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="{{ url_for('static', filename='images/#.jpg') }}" alt="Project Image">
-                    <div class="project-text">
-                        <h3>ExploreBreda ambassadors/Project 4</h3>
-                        <p> For project my group decided to use the Hidden Spots idea and they changed the designed on the menu, based in this iteration change i had to change the upload page code to resemble and harmonize with the design my colleagues used.</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="{{ url_for('static', filename='images/#.jpg') }}" alt="Project Image">
-                    <div class="project-text">
-                        <h3>Blender House</h3>
-                        <p> Creating a simple building in Blender demonstrates my ability to use professional design tools and produce 3D models to a basic standard, even if the project is basic. It shows my proficiency with industry-standard tools..</p>
-                    </div>
-                </div>
-                <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Learning Outcome 2</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <script src="https://use.typekit.net/ehh4lya.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-</head>
-<body>
-    <nav class="navbar">
-        <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('lO1') }}">LO1</a>
-        <a href="{{ url_for('lO2') }}">LO2</a>
-        <a href="{{ url_for('lO3') }}">LO3</a>
-        <a href="{{ url_for('lO4') }}">LO4</a>
-        <a href="{{ url_for('lO5') }}">LO5</a>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo1') }}">LO1</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo2') }}">LO2</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo3') }}">LO3</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo4') }}">LO4</a></li>
+            <li class="navbar-item"><a href="{{ url_for('lo5') }}">LO5</a></li>
+        </ul>
     </nav>
 
     <section class="section section--lo" id="lo2">
