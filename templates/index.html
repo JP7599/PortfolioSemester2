@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Jean Pierre van Driel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+    <script src="https://use.typekit.net/ehh4lya.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+<nav class="side">
+    <div class="side__inner">
+        <div class="top"><a href="#">Jean Pierre</a></div>
+        <div class="bottom">
+            <a href="https://github.com/JP7599">GITHUB</a>
+            <a href="https://www.linkedin.com/in/jeanpierrevandriel/">LinkedIN</a>
+            <a href="mailto:jeanpierrevdriel@gmail.com">EMAIL ME</a>
+        </div>
+    </div>
+</nav>
+
+<section class="section section--hello" id="hello">
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#intro"><span>#0</span>Hello</a>
+            <h2>Hello</h2>
+            <ul class="anchornav">
+                <li><a href="#intro">Learning Outcome 1 <span>#1 Interactive media products</span></a></li>
+                <li><a href="#about">Learning Outcome 2 <span>#2 Development & version control</span></a></li>
+                <li><a href="#clients">Learning Outcome 3 <span>#3 Iterative design</span></a></li>
+                <li><a href="#portfolio">Learning Outcome 4 <span>#4 Professional standard</span></a></li>
+                <li><a href="#leadership">Learning Outcome 5 <span>#5 Personal Leadership</span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section section--intro" id="intro">
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#intro"><span>#1</span>Interactive media products</a>
+            <h1>Take a look <br>
+                into the projects<br>
+                I made<br>
+                for LO1</h1>
+            <p class="lead">
+                See the projects on LO1 <a href="./LO1.html" class="link">Here</a>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--about" id="about">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <polygon points="100 0 50 10 0 0" />
+    </svg>
+
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#about"><span>#2</span>Development & version control</a>
+            <h2>Learning and exploring new programming languages is a passion for me.</h2>
+            <p class="lead">Take a look at some projects of mine from my LO2 <a href="#" class="link">Here</a>.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--clients" id="clients">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <polygon points="100  100 10 0 5 0 10" /></svg>
+
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#clients"><span>#3</span>Iterative design</a>
+            <h2>I like to explore and use professional design tools to make my work better.</h2>
+            <p class="lead">You can see some of my projects from LO3 <a href="#" class="link">Here</a>.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--portfolio" id="portfolio">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C 25 0 75 0 100 100 Z"></path>
+    </svg>
+
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#portfolio"><span>#4</span>Professional standard</a>
+            <h2>I try to keep my personal and group work organized and easy to understand.</h2>
+            <p class="lead">Take a look at some projects that involve LO4 <a href="#" class="link">Here</a>.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--portfolio1" id="leadership">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C 50 0 50 0 100 100 Z"></path>
+    </svg>
+
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#leadership"><span>#5</span>Personal Leadership</a>
+            <h2>I like to take initiative to make some new projects.</h2>
+            <p class="lead">Take a look at some projects that involve LO5 <a href="#" class="link">Here</a>.</p>
+        </div>
+    </div>
+</section>
+
+<main>
+    <div class="inquiry-section">
+        <h2>MORE QUESTIONS?</h2>
+        <div class="chat-widget">
+            <div class="chat-header">JP BOT</div>
+            <div class="chat-body" id="chatBox"></div>
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="userInput" placeholder="Write a message...">
+                <button class="chat-send" onclick="sendPrompt()">></button>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
