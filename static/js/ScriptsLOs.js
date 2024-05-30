@@ -5,23 +5,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
       const $images = gsap.utils.toArray("[data-scroll='image']");
     
       // Anchor Nav
-      document.querySelectorAll(".anchor").forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
-      e.preventDefault();
-      const targetId = e.target.getAttribute("href");
-      const target = document.querySelector(targetId);
-      if (target) {
-      const containerRect = $container.getBoundingClientRect();
-      const targetRect = target.getBoundingClientRect();
-      const scrollX = targetRect.left - containerRect.left;
 
-      gsap.to($container, {
-        scrollTo: { x: scrollX, autoKill: false },
-        duration: 1
-      });
-    }
-  });
-});
     
       // Horizontal Scroll 
       const offset = -100 * ($sections.length - 1);

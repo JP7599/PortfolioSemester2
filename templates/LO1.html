@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LO1</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Pierre van Driel - Portfolio</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
 
     <script src="{{ url_for('static', filename='js/ScriptsLOs.js') }}" defer></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styleLOs.css') }}">
-  </head>
-  <body>
+</head>
+<body>
     <header id="masthead" class="site-header" role="banner">
       <nav class="anchor-nav" role="navigation">
-        <li class="anchor"><a href="{{ url_for('index') }}">Home</a></li>
-        <li class="anchor"><a href="{{ url_for('lo1') }}">LO1</a></li>
-        <li class="anchor"><a href="{{ url_for('lo2') }}">LO2</a></li>
-        <li class="anchor"><a href="{{ url_for('lo3') }}">LO3</a></li>
-        <li class="anchor"><a href="{{ url_for('lo4') }}">LO4</a></li>
-        <li class="anchor"><a href="{{ url_for('lo5') }}">LO5</a></li>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('lo1') }}">LO1</a></li>
+        <li><a href="{{ url_for('lo2') }}">LO2</a></li>
+        <li><a href="{{ url_for('lo3') }}">LO3</a></li>
+        <li><a href="{{ url_for('lo4') }}">LO4</a></li>
+        <li><a href="{{ url_for('lo5') }}">LO5</a></li>
       </nav>
     </header>
     <main>

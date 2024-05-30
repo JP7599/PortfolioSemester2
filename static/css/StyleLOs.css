@@ -27,7 +27,7 @@
   }
 
     .anchor-nav a {
-    color: #000;
+    color: #588157;
     text-decoration: none;
     margin: 0 10px;
     padding: 5px 10px;
@@ -394,6 +394,36 @@
       text-align: center;
       max-width: 80vmin;
     }
+    /* Navigation Styles */
+#masthead {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.9); 
+}
+
+.anchor-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 16px 0; 
+}
+
+.anchor-nav a {
+  color: #588157;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-family: 'LEMONMILK', sans-serif;
+}
+
+.anchor-nav a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
 
 
 
