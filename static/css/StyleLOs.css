@@ -1,60 +1,401 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
+
+
+
+
+/* INDEX CSS*/
+@font-face {
+  font-family: 'LEMONMILK';
+  src: url('../fonts/LEMONMILK-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-header {
-  background-color: #588157;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-}
+    /* nav */
+    #masthead {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9); 
+  }
 
-h1 {
-  margin: 0;
-  font-size: 2em;
-}
+    .anchor-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 16px 0; 
+  }
 
-main {
-  padding: 20px;
-}
+    .anchor-nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-family: 'LEMONMILK', sans-serif;
+  }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+    .anchor-nav a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
 
-.project {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  width: 300px;
-  text-align: center;
-}
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-.project img {
-  width: 100%;
-  height: auto;
-}
+    h2 {
+      color: #283618;
+    }
 
-.project-info {
-  padding: 15px;
-}
 
-.project-info h2 {
-  margin: 0;
-  font-size: 1.5em;
-  color: #333;
-}
+    body * {
+      box-sizing: border-box;
+    }
 
-.project-info p {
-  color: #666;
-  font-size: 1em;
-}
+    p {
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100vw;
+      height: 100vh;
+      flex-shrink: 0;
+      
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      overflow: hidden;
+    }
+
+    .section:nth-child(even) {
+      background: rgb(255, 255, 255);
+    }
+
+    .image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+      .bottom-right-text {
+      position: absolute;
+      margin-right: 260px;
+      right: 20px;
+      bottom: 35px;
+      font-size: 2vmin;
+      z-index: 100;
+      max-width: 100px;
+      text-align: right;
+      color: #000000;
+      }
+
+      main {
+      margin-left: 220px; 
+      flex-grow: 1;
+      padding: 20px;
+      overflow-y: auto;
+      }
+
+
+      body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: 'LEMONMILK';
+      font-weight: 900;
+      color: #344E41;
+      position: relative;
+      }
+      
+      .portfolioTitle{
+        color: #000000
+      }
+
+
+      /* Text animation */
+      .text {
+      display: inline-block;
+      font-size: 10vmin;
+      line-height: 1;
+      transform: translateX(-150px);
+      color: #3A5A40;
+      font-family: 'LEMONMILK';
+      }
+      .text__first, .text__second {
+      position: relative;
+      }
+      .text__word {
+      opacity: 0;
+      }
+      .text__first-bg, .text__second-bg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      transform-origin: left;
+      transform: scaleX(0);
+      }
+      .text__first-bg {
+      background-color: #A3B18A;
+      }
+      .text__second-bg {
+      background-color: #344E41;
+      }
+      .text__second {
+      margin-left: 15vmin;
+      }
+      #about {
+      padding: 80px; /* space inside the section */
+      font-size: 2vmin; /* reading size */
+      line-height: 1.6; /* line height */
+      display: flex;
+      flex-direction: column; /* stacks children vertically */
+      }
+
+      .textabme {
+      display: inline-block;
+      font-size: 6vmin;
+      line-height: 1;
+      transform: translateX(-20px);
+      color: #ffb703
+      }
+
+      .abmecontent {
+        color: #023047
+      }
+
+
+      .textcontact {
+      display: inline-block;
+      font-size: 6vmin;
+      line-height: 1;
+      transform: translateX(-20px);
+      }
+
+    
+      .portfolio-links {
+      text-align: justify;
+      margin-top: 20px;
+      }
+
+      /* links styles */
+
+      .link {
+      margin: 50px auto 20px auto;
+      padding: 10px;
+      border-bottom: 2px solid #eee;
+      width: 500px;
+      margin-left: 700px;
+      margin-top: 250px;
+      }
+
+      .link a {
+      font-family: inherit;
+      font-size: 26px;
+      color: #003459;
+      font-weight: 1000;
+      margin: 0 20px 0 0;
+      position: relative;
+      }
+
+      .link a:before {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+      content: '';
+      -webkit-transform: translateY(8px);
+      opacity: 0;
+      transition-property: -webkit-transform, opacity;
+      transition-duration: .3s;
+      }
+
+      .link a:hover:before {
+      -webkit-transform: translateY(0);
+      opacity: 1;
+      }
+
+      /* icons */
+      .contact-icons {
+      position: absolute;
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: row;
+      }
+
+      .contact-icons a.icon {
+      margin: 5px 7vmin;
+      color: #000000; 
+      font-size: 130px;
+      text-decoration: none;
+      }
+
+      .contact-icons a.icon:hover {
+      color: #0077B5; 
+      }
+
+      /* technologies text */
+      .skills { 
+      width: 50%;
+      margin: 0 auto;
+      padding:0;
+      margin-left: 700px;
+      margin-top: 250px;
+      }
+
+      .skillstext{
+        font-family: 'Montserrat', sans-serif;
+      }
+
+    /* Overlay Texts */
+
+    .overlay-text {
+    font-size: 240px;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+    }
+
+    .overlay-text2 {
+      font-size: 150px;
+      color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      white-space: nowrap;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -10;
+      }
+
+  .content {
+  position: absolute;
+  margin-left: 130px;
+  left:1px;
+  margin-bottom: 280px;
+  z-index: 1;
+  max-width: 800px;
+  padding: 10px;
+  font-size: 2vmin;
+  }
+  
+  .content2 {
+    position: absolute;
+    margin-left: 900px;
+    left:1px;
+    margin-top: 250px;
+    z-index: 1;
+    max-width: 800px;
+    padding: 10px;
+    font-size: 2vmin;
+    }
+
+  .scroll-down {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 25vmin;
+    color: darken(#000000, 5%);
+    font-size: 32px;  
+    font-weight: 800;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav-back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      background-color: rgba(223, 223, 223, 0.5);
+      font-family: "LEMONMILK"; 
+      color: #000000;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .nav-back-button2 {
+      position: fixed;
+      top: 20px;
+      left: 25vmin;
+      z-index: 1000;
+      background-color: rgba(223, 223, 223, 0.5);
+      font-family: "LEMONMILK"; 
+      color: #000000;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+  .week1{
+      color: #606c38;
+      align-items: center;
+      text-align: center;
+      max-width: 80vmin;
+    }
+    .week2{
+      color: #283618;
+      align-items: center;
+      text-align: center;
+      max-width: 80vmin;
+    }
+    .week3{
+      color: #dda15e;
+      align-items: center;
+      text-align: center;
+      max-width: 80vmin;
+    }
+    .imageskills {
+      display: block;      
+      max-width: 80vmin;   
+      height: auto;        
+      margin: 0 auto;      
+      border: 5px solid #dda15e; 
+      border-radius: 10px; 
+    }
+    .week4{
+      color: #bc6c25;
+      align-items: center;
+      text-align: center;
+      max-width: 80vmin;
+    }
+
+
+
 
   

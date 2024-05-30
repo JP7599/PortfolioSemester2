@@ -1,45 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Learning Outcome 2</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleNavLOs.css') }}">
-    <script src="https://use.typekit.net/ehh4lya.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-</head>
-<body>
-    <nav class="navbar">
-        <ul class="navbar-menu">
-            <li class="navbar-item"><a href="{{ url_for('index') }}">Home</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo1') }}">LO1</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo2') }}">LO2</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo3') }}">LO3</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo4') }}">LO4</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo5') }}">LO5</a></li>
-        </ul>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LO1</title>
 
-    <section class="section section--lo" id="lo2">
-        <div class="section__inner">
-            <div class="block">
-                <h2>Learning Outcome </h2>
-                <p class="lead">Iterative Design</p>
-                <!-- Example of adding a project -->
-                <div class="project">
-                    <div class="project-text">
-                        <h3>Heuristic Evaluation</h3>
-                        <p> I performed a heuristic evaluation for the UX design of the Media campaign page for video uploads. This involved iteratively identifying usability issues and suggesting improvements to enhance user experience.</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="../static/images/VideoUpload.png" alt="Project Image">
-                    <div class="project-text">
-                        <h3>ExploreBreda ambassadors/Project 4</h3>
-                        <p> For project my group decided to use the Hidden Spots idea and they changed the designed on the menu, based in this iteration change i had to change the upload page code to resemble and harmonize with the design my colleagues used.</p>
-                    </div>
-                </div>
-                
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
 
-    </section>
-</body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    <script src="{{ url_for('static', filename='js/ScriptsLOs.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleLOs.css') }}">
+  </head>
+  <body>
+    <header id="masthead" class="site-header" role="banner">
+      <nav class="anchor-nav" role="navigation">
+        <li class="anchor"><a href="{{ url_for('index') }}">Home</a></li>
+        <li class="anchor"><a href="{{ url_for('lo1') }}">LO1</a></li>
+        <li class="anchor"><a href="{{ url_for('lo2') }}">LO2</a></li>
+        <li class="anchor"><a href="{{ url_for('lo3') }}">LO3</a></li>
+        <li class="anchor"><a href="{{ url_for('lo4') }}">LO4</a></li>
+        <li class="anchor"><a href="{{ url_for('lo5') }}">LO5</a></li>
+      </nav>
+    </header>
+    <main>
+      <div class="container" data-scroll="container">
+        <section class="section" data-scroll="section" id="main-page">
+                <div class="page">
+                  <p class="text"> 
+                        <span class="text__first">
+                            <span class="text__word">Iterative</span>
+                            <span class="text__first-bg">
+                            </span>
+                        </span>
+                        <br/>
+                        <span class="text__second">
+                            <span class="text__word">Design</span>
+                            <span class="text__second-bg">
+                            </span>
+                        </span>
+                    </p>
+                    
+                    <div class="scroll-down">SCROLL</div>
+        </section>
+        <section class="section" data-scroll="section" id="about">
+          <div class="overlay-text"> PROJECT 1</div>
+          <div class="content">
+            <div> 
+              <h2> Natalies Art Branding</h2>
+              <p> For this project I was in charge of createing the brand identity for an artist named Natalie. I first conducted a competitor analysis with other artists to see how
+                 they portrayed their desired image and message across, based on this i was able to create a brand identity, i also did the first website and logo iteration which 
+                 were changed afterwards by a colleague, and i created the intagram feed design based on our clients information. This project involved orienting myself in current 
+                 design trends and technologies, creating interactive prototypes, and research with other artists and our client.</p>
+            </div>
+          </div>
+            <br>
+            <div class="skills">
+                <h2>Highlight</h2>
+                <div class="skillstext">
+                  <li>Natailies Art from the Hart- Natalie really liked the brand idea</li><br>
+                </div>      
+              </div>    
+        </section>
+        <section class="section" data-scroll="section">
+          <img class="image" src="{{ url_for('static', filename='images/NatalieProject.png') }}" alt="portrait snow" data-scroll="image" data-intensity="0.5" />
+          </section>
+        <section class="section" data-scroll="section" id="portfolio">
+          <div class="overlay-text"> PROJECT 2</div>
+          <div class="content">
+            <div>
+          <h2>Media Campaign explorebreda.nl</h2>
+          <p>For this project in which we had to create a media campaign to drive traffic to the explorebreda.nl website with the target market of locals and people planing to move to breda.
+            I developed ideas i had such as AI-generated QR codes, filmed clips for the campaign videos, made a example tiktok,  performed SEO keyword research, researched locations to film the videos and protptyped my idea called 'Hidden Spots' in consistency with explorebreda.nl's website which 
+            encouraged residents of breda to upload clips from their favorite places in breda, and in this way getting a lot of content, unbiased recomendations and target market loyalty.  .<br>
+             </p>
+          </div>
+          <div class="skills">
+            <h2>Highlight</h2>
+            <div class="skillstext">
+              <li>Hidden Spots - Cient asked to develop</li><br>
+            </div>      
+          </div>    
+        </section>
+        <section class="section" data-scroll="section">
+          <img class="image" src="{{ url_for('static', filename='images/MediaCampaignProject.png') }}" alt="portrait beach" data-scroll="image" data-intensity="0.5" />
+        </section>
+
+        <section class="section" data-scroll="section" id="skills">
+          <div class="overlay-text">END</div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

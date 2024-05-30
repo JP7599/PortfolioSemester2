@@ -1,67 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Learning Outcome 2</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleNavLOs.css') }}">
-    <script src="https://use.typekit.net/ehh4lya.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-</head>
-<body>
-    <nav class="navbar">
-        <ul class="navbar-menu">
-            <li class="navbar-item"><a href="{{ url_for('index') }}">Home</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo1') }}">LO1</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo2') }}">LO2</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo3') }}">LO3</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo4') }}">LO4</a></li>
-            <li class="navbar-item"><a href="{{ url_for('lo5') }}">LO5</a></li>
-        </ul>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LO1</title>
 
-    <section class="section section--lo" id="lo2">
-        <div class="section__inner">
-            <div class="block">
-                <h2>Learning Outcome 2</h2>
-                <p class="lead">Development & version control</p>
-                <div class="project">
-                    <img src="../static/images/jigglypuff.png" alt="Project Image">
-                    <div class="project-text">
-                        <h3>Moving Jigglypuff</h3>
-                        <p>Animating a Jigglypuff using the @keyframes query in CSS shows my understanding of animation in web development. This project involves writing and refining code, which is a key aspect of development and version control.</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="../static/images/psyduck.png" alt="Project Image">
-                    <div class="project-text">
-                        <h3>Coding Psyduck</h3>
-                        <p>Developing a CSS representation of Psyduck required in-depth knowledge of CSS, particularly working with shapes. This project highlights my coding skills and my ability to document and manage my code through version control.</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="../static/images/drumkit.png" alt="Project Image">
-                    <div class="project-text">
-                        <h3>JS Drumkit</h3>
-                        <p>I corrected and enhanced a JavaScript drumkit, making syntax corrections, adding sounds, and altering the design to make it unique and functional. This project required me to document changes and use version control to track my progress.</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="../static/images/tictac.png" alt="Project Image">
-                    <div class="project-text">
-                        <h3>Correcting Tictactoe</h3>
-                        <p>I corrected the code for a JavaScript, HTML, and CSS Tic-Tac-Toe app, added visual feedback for winning squares, and animated a dancing Pokémon at the end. This involved debugging and version control to ensure the app worked seamlessly.</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="../static/images/bashAR.png" alt="Project Image">
-                    <div class="project-text">
-                        <h3>AR pikachu</h3>
-                        <p>I successfully implemented an AR projection of Pikachu, utilizing pre-existing 3D models and focusing on the technical aspects of augmented reality. This project required me to work with AR technologies, ensuring the integration was seamless and functional, and involved documenting the process within a version control environment to track changes and improvements. Unfortunelately the AR image cant be shown due to apple's security in my phone but there is the running server</p>
-                    </div>
-                </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    <script src="{{ url_for('static', filename='js/ScriptsLOs.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleLOs.css') }}">
+  </head>
+  <body>
+    <header id="masthead" class="site-header" role="banner">
+      <nav class="anchor-nav" role="navigation">
+        <li class="anchor"><a href="{{ url_for('index') }}">Home</a></li>
+        <li class="anchor"><a href="{{ url_for('lo1') }}">LO1</a></li>
+        <li class="anchor"><a href="{{ url_for('lo2') }}">LO2</a></li>
+        <li class="anchor"><a href="{{ url_for('lo3') }}">LO3</a></li>
+        <li class="anchor"><a href="{{ url_for('lo4') }}">LO4</a></li>
+        <li class="anchor"><a href="{{ url_for('lo5') }}">LO5</a></li>
+      </nav>
+    </header>
+    <main>
+        <div class="container" data-scroll="container">
+          <section class="section" data-scroll="section" id="main-page">
+                  <div class="page">
+                    <p class="text"> 
+                          <span class="text__first">
+                              <span class="text__word">Development </span>
+                              <span class="text__first-bg">
+                              </span>
+                          </span>
+                          <br/>
+                          <span class="text__second">
+                              <span class="text__word">and Version Control</span>
+                              <span class="text__second-bg">
+                              </span>
+                          </span>
+                      </p>
+                      
+                      <div class="scroll-down">SCROLL</div>
+                  </div>
+          </section>
+          <section class="section" data-scroll="section">
+            <img class="image" src="../static/images/JigglyAndPsyduck.png" alt="portrait city" data-scroll="image" data-intensity="0.5" />
+          </section>
+          <section class="section" data-scroll="section" id="about">
+            <div class="overlay-text"> DEVELOPMENT</div>
+            <div class="content">
+              <div> 
+                <h2> Moving Jigglypuff</h2>
+                <p> Animating a Jigglypuff using the @keyframes query in CSS shows my understanding of animation in web development.
+                     This project involves writing and refining code, which is a key aspect of development and version control.</p>
+              </div>
             </div>
+            <div class="content2">
+                <div> 
+                  <h2> Coding Psyduck</h2>
+                  <p> Developing a CSS representation of Psyduck required in-depth knowledge of CSS, particularly working with shapes.
+                     This project highlights my coding skills and my ability to document and manage my code through version control.</p>
+                </div>
+              </div>
+          </section>
+          <section class="section" data-scroll="section">
+            <img class="image" src="../static/images/drumsAndtictac.png" alt="portrait snow" data-scroll="image" data-intensity="0.5" />
+            </section>
+          <section class="section" data-scroll="section" id="portfolio">
+            <div class="overlay-text"> DEVELOPMENT</div>
+            <div class="content">
+              <div>
+            <h2>JS Drumkit</h2>
+            <p>I corrected and enhanced a JavaScript drumkit, making syntax corrections, adding sounds, and altering the design to make it unique and functional. 
+                This project required me to document changes and use version control to track my progress.</p>
+            </div>
+          </div>
+          <div class="content2">
+            <div>
+          <h2>Correcting Tictactoe</h2>
+          <p>I corrected the code for a JavaScript, HTML, and CSS Tic-Tac-Toe app, added visual feedback for winning squares, and animated a dancing Pokémon at the end. 
+            This involved debugging and version control to ensure the app worked seamlessly.</p>
+          </div>
         </div>
-    </section>
-</body>
+          </section>
+          <section class="section" data-scroll="section">
+            <img class="image" src="../static/images/BredaExplore.png" alt="portrait beach" data-scroll="image" data-intensity="0.5" />
+          </section>
+  
+          <section class="section" data-scroll="section" id="skills">
+            <div class="overlay-text">PROJECT 3</div>
+            <div class="content">
+              <div>
+            <h2>Project 3</h2>
+            <p>For project my group decided to use the Hidden Spots idea and they changed the designed on the menu, 
+                based in this iteration change i had to change the upload page code to resemble and harmonize with the design my colleagues used.<br>
+             The website lets you upload your 3 clips and then visualize them on the site.<br>
+              the languages used on the project were: Javascript, HTML and CSS.
+        </p>
+            </div>  
+          </div>
+          <section class="section" data-scroll="section" id="contact">
+            <section class="section" data-scroll="section" id="skills">
+                <div class="overlay-text">DEVDELOPMENT</div>
+                <div class="content">
+                  <div>
+                <h2>AR Pikachu</h2>
+                <p>I successfully implemented an AR projection of Pikachu, utilizing pre-existing 3D models and focusing on the technical aspects of augmented reality. This project required me to work with AR technologies, ensuring the integration was seamless and functional, and involved documenting the process within a version control environment to track changes and improvements.
+                     Unfortunelately the AR image cant be shown due to apple's security in my phone but there is the running server</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+  </body>
 </html>
-
