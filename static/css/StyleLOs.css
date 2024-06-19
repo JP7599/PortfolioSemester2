@@ -201,12 +201,10 @@
       /* links styles */
 
       .link {
-      margin: 50px auto 20px auto;
-      padding: 10px;
+      margin: 0px auto 0px auto;
+      padding: 0px;
       border-bottom: 2px solid #eee;
-      width: 500px;
-      margin-left: 700px;
-      margin-top: 250px;
+      width: 1000px;
       }
 
       .link a {
@@ -424,8 +422,15 @@
   border-radius: 5px;
 }
 
+.image-content {
+  position: absolute; 
+  right: 50%; 
+  top: 150%; 
+  width: auto;
+  height: 50vh; 
+}
 
-
-
-
-  
+.image-content img {
+  max-height: 40%;
+  width: auto;
+}

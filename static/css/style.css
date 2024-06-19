@@ -13,6 +13,7 @@ body, html {
   font-style: normal;
 }
 
+
 /* General font settings */
 html {
   box-sizing: border-box;
@@ -270,7 +271,7 @@ a {
 
 /* fonts and sizes */
 h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
-  font-family: 'LEMONMILK', sans-serif;
+  font-family: 'LEMONMILK-Medium', sans-serif;
   font-weight: bold;
   margin: 0 0 1em;
   line-height: 1;
@@ -380,11 +381,10 @@ p a:hover {
   width: 50px;
   border-right: 1px dashed rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.5);
-  font-family: "nimbus-sans", sans-serif;
+  font-family: "LEMONMILK-light", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.0875rem;
   font-size: 10px;
-  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
 }
 
 .side:hover {
@@ -399,8 +399,7 @@ p a:hover {
 
 .side a {
   color: inherit;
-  word-spacing: 0;
-  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+  word-spacing: 0;;
 }
 
 .side .top, .side .bottom {
@@ -459,7 +458,7 @@ p a:hover {
 .anchornav a {
   display: block;
   padding: 1em 0;
-  font-family: "nimbus-sans", sans-serif;
+  font-family: "LEMONNMILK-Medium", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1.4px;
@@ -472,7 +471,7 @@ p a:hover {
   padding: 0.5em 0 0;
   opacity: 0.3;
   letter-spacing: normal;
-  font-family: "ff-meta-serif-web-pro", serif;
+  font-family: "LEMONMILK-Medium", serif;
   text-transform: none;
 }
 
@@ -514,23 +513,23 @@ p a:hover {
 }
 
 .section.section--about {
-  background-color: #588157;
-  color: #dad7cd;
+  background-color: #dad7cd;
+  color: #344e41;
 }
 
 .section.section--clients {
-  background-color: #3a5a40;
-  color: #dad7cd;
+  background-color: #a3b18a;
+  color: #344e41;
 }
 
 .section.section--portfolio {
-  background-color: #344e41;
-  color: #dad7cd;
+  background-color: #dad7cd;
+  color: #344e41;
 }
 
 .section.section--leadership {
-  background-color: #2d6a4f;
-  color: #dad7cd;
+  background-color: #a3b18a;
+  color: #344e41;
 }
 
  /* nav */
@@ -563,3 +562,15 @@ p a:hover {
   border-radius: 5px;
 }
 
+.image-content {
+  position: absolute; 
+  right: 0%; 
+  top: 0%; 
+  width: auto;
+  height: 80vh; 
+}
+
+.image-content img {
+  max-height: 80%;
+  width: auto;
+}
